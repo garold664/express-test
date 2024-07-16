@@ -261,6 +261,7 @@ app.put('/places', async (req, res) => {
 });
 
 app.get('/places', async (req, res) => {
+  console.log('get places');
   res.json(await Place.find());
 });
 
