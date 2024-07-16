@@ -65,7 +65,7 @@ import { resolve } from 'path';
 // await mongoose.connect(process.env.MONGO_URL);
 
 console.log(process.env.MONGO_URL);
-mongoose.connect(process.env.MONGO_URL as string);
+// mongoose.connect(process.env.MONGO_URL as string);
 
 app.get('/test', (req, res) => {
   res.json('test ok');
