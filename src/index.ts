@@ -59,8 +59,8 @@ app.use(
 import { fileURLToPath } from 'url';
 import { resolve } from 'path';
 
-// const __dirname = resolve(fileURLToPath(import.meta.url), '../..');
-// app.use('/uploads', express.static(__dirname + '/uploads'));
+const __dirname = resolve(fileURLToPath(import.meta.url), '../..');
+app.use('/uploads', express.static(__dirname + '/uploads'));
 
 await mongoose.connect(process.env.MONGO_URL);
 
