@@ -7,9 +7,8 @@
       "config": { "includeFiles": ["api/**"] }
     }
   ],
-  {
-    "rewrites": [{ "source": "/(.*)", "destination": "api/index.js" }]
-  },
+
+  "rewrites": [{ "source": "/(.*)", "destination": "api/index.js" }],
   "headers": [
     {
       "source": "/(.*)",
