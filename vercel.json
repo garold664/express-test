@@ -7,12 +7,7 @@
       "config": { "includeFiles": ["api/**"] }
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "api/index.js"
-    }
-  ],
+
   "headers": [
     {
       "source": "api/(.*)",
