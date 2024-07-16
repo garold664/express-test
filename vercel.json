@@ -7,6 +7,12 @@
       "config": { "includeFiles": ["api/**"] }
     }
   ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "api/index.js"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
